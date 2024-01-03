@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
+* {
+  font-family: "Figtree", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: var(--yellow);
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 20rem;
+  height: 28rem;
+  background: var(--white);
+  display: grid;
+  align-items: centr;
+  grid-template-columns: auto;
+  grid-template-rows: 12rem auto auto auto;
+  gap: 0.3rem;
+  border-radius: 1rem;
+  padding: 1.3rem;
+  border: 1px solid var(--black);
+  box-shadow: 0.5rem 0.5rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.card .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .item span {
+  padding: 5px 10px;
+  background: var(--yellow);
+  border-radius: 0.2rem;
+  font-weight: 800;
+}
+
+.card .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card .about .text-bold {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.card .about .text {
+  color: var(--grey);
+}
+
+.card .profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card .profile .img {
+  width: 35px;
+  height: 35px;
+  background: url("./assets/images/image-avatar.webp");
+  background-size: cover;
+}
+.profile .text {
+  font-weight: 800;
+}
